@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController.m
 //  AgeCalculator
 //
@@ -132,7 +132,7 @@
     [oneYear setMonth:12];
     
     // 13. We can use the above "oneYear" object and add it to "currentYearBirthday" to determine the user's next birthday.
-    NSDate *nextBirthday = [calendar currentYearBirthday: toDate: oneYear options:0];
+    NSDate *nextBirthday = [calendar dateByAddingComponents: oneYear toDate: currentYearBirthday options:0];
     //<#we need to reference the year component object here#> toDate:<#which date object should we use?#>
     
     
